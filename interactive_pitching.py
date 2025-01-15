@@ -130,22 +130,6 @@ if not filtered_data.empty:
     # Add a Total column
     table_data["Total"] = table_data.sum(axis=1)
     
-    # Define the desired column order
-    custom_order = [
-        "Total",
-        "StrikeCalled",
-        "StrikeSwinging",
-        "FoulBallNotFieldable",
-        "FoulBallFieldable",
-        "BallCalled",
-    ]
-
-    # Append remaining columns dynamically
-    remaining_columns = [col for col in table_data.columns if col not in custom_order]
-    final_order = custom_order + remaining_columns
-
-    # Reorder the table columns
-    table_data = table_data[final_order]
 
     # Display the table using Streamlit
     st.dataframe(table_data)
