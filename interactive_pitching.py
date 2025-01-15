@@ -10,7 +10,7 @@ url = "https://raw.githubusercontent.com/tacos2718/Interactive-Pitching/refs/hea
 data = pd.read_csv(url)
 # print(data.head)
 
-st.title("Interactive Pitching Data")
+st.title("Pitching Report")
 
 
 
