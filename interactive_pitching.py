@@ -45,6 +45,8 @@ scatter = sns.scatterplot(
     palette="viridis",
     alpha=0.8
 )
+ax.set_xlim(-4, 4)
+ax.set_ylim(-1, 5)
 ax.set_title("Scatterplot: PlateLocHeight vs PlateLocSide")
 ax.set_xlabel("PlateLocSide")
 ax.set_ylabel("PlateLocHeight")
