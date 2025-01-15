@@ -138,7 +138,6 @@ if not filtered_data.empty:
         "FoulBallNotFieldable",
         "FoulBallFieldable",
         "BallCalled",
-        "InPlay"
     ]
 
     # Append remaining columns dynamically
