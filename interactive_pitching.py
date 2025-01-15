@@ -5,7 +5,9 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 
-data = pd.read_csv("20241101-Matador Field-Private-1_unverified.csv")
+url = "https://raw.githubusercontent.com/tacos2718/Interactive-Pitching/refs/heads/main/20241101-Matador%20Field-Private-1_unverified.csv"
+
+data = pd.read_csv(url)
 # print(data.head)
 
 st.title("Interactive Pitching Data")
