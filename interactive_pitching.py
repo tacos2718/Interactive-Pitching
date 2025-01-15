@@ -52,6 +52,11 @@ ax.set_xlabel("PlateLocSide")
 ax.set_ylabel("PlateLocHeight")
 ax.legend(title="TaggedPitchType", bbox_to_anchor=(1.05, 1), loc='upper left')
 
+xmin, ymin = -.7, 1.5
+xmax, ymax = .7, 3.6
+plt.gca().add_patch(plt.Rectangle((xmin, ymin), xmax - xmin, ymax - ymin,
+                                  edgecolor='red', facecolor='none', linewidth=2))
+
 # Display the plot
 st.pyplot(fig)
 
