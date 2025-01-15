@@ -115,7 +115,7 @@ st.pyplot(fig2)
 ################################################################################################
 
 # Table of TaggedPitchType vs PitchCall with Total column
-st.subheader("Table: TaggedPitchType vs PitchCall (with Total)")
+st.subheader("Pitch Call by Pitch Type")
 
 if not filtered_data.empty:
     # Create a pivot table (contingency table)
